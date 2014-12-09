@@ -5,8 +5,8 @@
 /misc	emmc	/dev/block/platform/msm_sdcc.1/by-name/misc
 /sns	ext4	/dev/block/platform/msm_sdcc.1/by-name/sns
 /mpt	ext4	/dev/block/platform/msm_sdcc.1/by-name/mpt
-/sdcard	auto	/mmcblk1p1
-/external_SD	vfat	/devices/msm_sdcc.2/mmc_host
+/external_SD	vfat	/mmcblk1p1
+/sdcard	ext4	auto	/data/media/0
 /recovery	emmc	/dev/block/platform/msm_sdcc.1/by-name/recovery
 /persist	ext4	/dev/block/platform/msm_sdcc.1/by-name/persist
 /persist-lg	ext4	/dev/block/platform/msm_sdcc.1/by-name/drm

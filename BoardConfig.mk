@@ -179,7 +179,7 @@ TW_SCREEN_BLANK_ON_BOOT := true
 TW_NO_REBOOT_BOOTLOADER := true
 RECOVERY_SDCARD_ON_DATA := true
 
-# PRODUCT_COPY_FILES += device/lge/x5/rootdir/twrp.fstab:recovery/root/etc/twrp.fstab
+PRODUCT_COPY_FILES += device/lge/x5/rootdir/twrp.fstab:recovery/root/etc/twrp.fstab
 
 BOARD_NFC_HAL_SUFFIX := x5
 BOARD_NFC_CHIPSET := pn544
