@@ -26,8 +26,10 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
-ssr_str="$1"
-BUILD_TYPE="$2"
+#ssr_str="$1"
+#BUILD_TYPE="$2"
+ssr_str=`getprop persist.sys.ssr.restart_level`
+BUILD_TYPE=`getprop ro.build.type`
 IFS=,
 ssr_array=($ssr_str)
 declare -i subsys_mask=0

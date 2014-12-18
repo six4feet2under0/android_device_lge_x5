@@ -2,6 +2,9 @@
 # system.prop for x5
 #
 
+# MTP
+persist.sys.usb.config=mtp,adb
+
 # Use reference RIL for initial bringup
 #rild.libpath=/system/lib/libreference-ril.so
 rild.libpath=/vendor/lib/libril-qc-qmi-1.so
@@ -260,3 +263,5 @@ ro.qc.sdk.izat.premium_enabled=1
 ro.qc.sdk.izat.service_mask=0x0
 persist.gps.qc_nlp_in_use=0
 ro.gps.agps_provider=1
+ro.vendor.extension_library=/system/lib/libqc-opt.so
+

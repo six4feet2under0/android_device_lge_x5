@@ -8,11 +8,11 @@
     "target_path": "device/qcom/fm"
   },
   {
-    "repository": "android_hardware_qcom_display",
+    "repository": "android_hardware_qcom_display-caf-new",
     "target_path": "hardware/qcom/display"
   },
   {
-    "repository": "android_hardware_qcom_media",
+    "repository": "android_hardware_qcom_media-caf-new",
     "target_path": "hardware/qcom/media"
   }
 ]

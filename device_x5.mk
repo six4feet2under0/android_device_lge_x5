@@ -26,6 +26,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.product.device=x5 \
     ro.product.model=LGLS740
 
+# Insecure boot
+PRODUCT_COPY_FILES += \
+    device/lge/x5/insecureboot/default.prop:root/default.prop
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.bluetooth_le.xml:system/etc/permissions/android.hardware.bluetooth_le.xml \
@@ -90,7 +94,8 @@ PRODUCT_COPY_FILES += \
     device/lge/x5/prebuilt/etc/sec_config:system/etc/sec_config \
     device/lge/x5/prebuilt/etc/izat.conf:system/etc/izat.conf \
     device/lge/x5/prebuilt/etc/boot_fixup:system/etc/boot_fixup \
-    device/lge/x5/prebuilt/etc/quipc.conf:system/etc/quipc.conf
+    device/lge/x5/prebuilt/etc/quipc.conf:system/etc/quipc.conf \
+    device/lge/x5/prebuilt/etc/vold.fstab:system/etc/vold.fstab
     
 ifeq ($TARGET_KERNEL_HAS_NFC),true)
     PRODUCT_COPY_FILES += \
